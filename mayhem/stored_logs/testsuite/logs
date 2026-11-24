@@ -1,0 +1,4 @@
+{"created_at":1700000000,"id":1,"message":"Failed to fetch https://x/y \"z\""}
+{"id":2,"message":"ok"}
+plain line
+{"id":4}

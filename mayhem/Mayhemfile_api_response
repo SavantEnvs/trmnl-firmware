@@ -1,0 +1,9 @@
+project: savantenvs/trmnl-firmware
+target: api_response
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/api_response/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_api_response
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+AT+CWLAP
++CWLAP:(5,"CorpNet",-55,"aa:aa:aa:aa:aa:aa",6)
++CWLAP:(0,"Cafe (Guest), \"x\"",-70,"bb:bb:bb:bb:bb:bb",11,-1,-1,4,4,7,1)
++CWLAP:(3,"HomeNet",-40,"cc:cc:cc:cc:cc:cc",1)
++CWLAP:(5,"CorpNet5",-60,"dd:dd:dd:dd:dd:dd",40)
+OK

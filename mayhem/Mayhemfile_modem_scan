@@ -1,0 +1,9 @@
+project: savantenvs/trmnl-firmware
+target: modem_scan
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/modem_scan/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_modem_scan
+    libfuzzer: true
+    timeout: 10

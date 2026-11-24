@@ -1,0 +1,9 @@
+project: savantenvs/trmnl-firmware
+target: image_render
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/image_render/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_image_render
+    libfuzzer: true
+    timeout: 10

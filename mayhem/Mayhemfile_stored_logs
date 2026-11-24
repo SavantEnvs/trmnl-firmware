@@ -1,0 +1,9 @@
+project: savantenvs/trmnl-firmware
+target: stored_logs
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stored_logs/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_stored_logs
+    libfuzzer: true
+    timeout: 10
